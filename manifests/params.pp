@@ -7,5 +7,5 @@ class nssm::params {
   $version     = '2.23'
   $install_url = "http://nssm.cc/release/nssm-${version}.zip"
 
-  #$install_dir
+  $install_dir = "C:\\Program Files\\nssm"
 }
