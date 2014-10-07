@@ -43,6 +43,23 @@ Install with defaults:
   }
 ```
 
+##Usage
+
+###Classes and Defined Types
+
+####Class: `nssm`
+One of the primary classes of the nssm module. This class will install the nssm binaries
+
+**Parameters within `nssm`:**
+#####`install_url`
+The url to download the nssm package from
+
+#####`install_dir`
+The directory to install the package to
+
+#####`version`
+The version of nssm to install
+
 ##Reference
 
 ###Classes
@@ -62,14 +79,3 @@ It is tested with the OSS version of Puppet only.
 ###Contributing
 
 Please read CONTRIBUTING.md for full details on contributing to this project.
-
-###Running tests
-
-This project contains tests for both [rspec-puppet](http://rspec-puppet.com/) and [beaker](https://github.com/puppetlabs/beaker) to verify functionality. For in-depth information please see their respective documentation.
-
-Quickstart:
-
-  gem install bundler
-  bundle install
-  bundle exec rake spec
-	BEAKER_DEBUG=yes bundle exec rspec spec/acceptance

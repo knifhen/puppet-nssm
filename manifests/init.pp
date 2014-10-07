@@ -1,11 +1,21 @@
+# Author::    Liam Bennett (mailto:lbennett@opentable.com)
+# Copyright:: Copyright (c) 2013 OpenTable Inc
+# License::   MIT
+
 # == Class: nssm
 #
-# Full description of class nssm here.
+# Module to install NSSM (the Non-Sucking Service Manager)
 #
 # === Parameters
 #
-# [*sample_parameter*]
-#   Explanation of what this parameter affects and what it defaults to.
+# [*install_url*]
+# The url to download the nssm package from
+#
+# [*install_dir*]
+# The directory to install the package to
+#
+# [*version*]
+# The version of nssm to install
 #
 class nssm (
   $install_url = $nssm::params::install_url,
