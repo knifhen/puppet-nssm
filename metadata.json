@@ -6,7 +6,7 @@
   "summary":       "Module to install the nssm (http://nssm.cc/)",
   "source":        "https://github.com/opentable/puppet-nssm",
   "project_page":  "https://github.com/opentable/puppet-nssm",
-  "issues_url": "https://github.com/opentable/puppet-nssm/issues",
+  "issues_url":    "https://github.com/opentable/puppet-nssm/issues",
   "tags": ["windows","utility","nssm"],
   "operatingsystem_support": [
     {
