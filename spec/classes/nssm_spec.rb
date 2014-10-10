@@ -6,10 +6,9 @@ describe 'nssm' do
       describe "nssm class without any parameters on #{osfamily}" do
         let(:params) {{ }}
         let(:facts) {{
-          :osfamily => osfamily,
+          :osfamily     => osfamily,
+          :architecture => 'amd64'
         }}
-
-        #it { should compile.with_all_deps }
 
         it { should contain_class('nssm::params') }
         it { should contain_class('nssm::install') }
@@ -25,6 +24,7 @@ describe 'nssm' do
       let(:facts) {{
         :osfamily        => 'Debian',
         :operatingsystem => 'Ubuntu',
+        :architecture    => 'amd64'
       }}
 
       it { expect { should contain_exec('unzip-nssm') }.to raise_error(Puppet::Error, /Debian not supported/) }
