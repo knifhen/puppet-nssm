@@ -1,6 +1,6 @@
 {
   "name":          "opentable-nssm",
-  "version":       "0.1.0",
+  "version":       "1.0.0",
   "author":        "opentable",
   "license":       "MIT",
   "summary":       "Module to install the nssm (http://nssm.cc/)",
@@ -14,24 +14,14 @@
       "operatingsystemrelease": ["6.1.7600","6.1.7601", "6.2.9200", "6.3.9200", "6.3.9600"]
     }
   ],
-  "requirements": [
-    {
-      "name": "pe",
-      "version_requirement": "3.2.x"
-    },
-    {
-      "name": "puppet",
-      "version_requirement": "3.x"
-    }
-  ],
   "dependencies": [
     {
-	    "name": "puppetlabs/stdlib",
-	    "version_requirement": ">= 3.0.0"
-	  },
+      "name": "puppetlabs/stdlib",
+      "version_requirement": ">= 3.0.0 <5.0.0"
+    },
     {
       "name": "opentable/download_file",
-      "version_requirement": ">= 0.0.2"
+      "version_requirement": ">= 0.0.2 <1.0.0"
     }
   ]
 
