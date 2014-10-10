@@ -17,6 +17,20 @@
 # [*version*]
 # The version of nssm to install
 #
+# === Examples
+#
+# Install with defaults:
+#
+#  include nssm
+#
+# Install from custom url:
+#
+#  class { 'nssm':
+#    install_url = 'http://nssm.cc/release/nssm-2.23.zip',
+#    install_dir = 'C:\Program Files\nssm',
+#    version     = '2.23'
+#  }
+#
 class nssm (
   $install_url = $nssm::params::install_url,
   $install_dir = $nssm::params::install_dir,

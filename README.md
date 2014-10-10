@@ -33,7 +33,7 @@ Install with defaults:
   include nssm
 ```
 
-##Usage
+Install from custom url:
 
 ```puppet
   class { 'nssm':
