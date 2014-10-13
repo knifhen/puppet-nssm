@@ -26,7 +26,7 @@ class nssm::install {
   exec { 'unzip-nssm':
     command  => "\$shell = New-Object -COMObject Shell.Application; \$zipfile = \$shell.NameSpace(\"nssm-${nssm::version}.zip\"); foreach(\$item in \$zipfile.Items()){ \$shell.NameSpace(\"${nssm::install_dir}\").CopyHere(\$item, 20)",
     provider => powershell,
-    creates  => "${nssm::download_dir}\\nssm-${nssm::version}\\win${bitness}",
+    creates  => "${nssm::install_dir}\\nssm-${nssm::version}\\win${bitness}",
     require  => Download_file['nssm-download']
   }
 }
